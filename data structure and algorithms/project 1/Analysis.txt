@@ -1,0 +1,31 @@
+Run Time Complexity analysis (worst case)
+
+Task 0:
+The running time complexity is O(1) since the only thing we are doing is accessing items by index in the lists and printing.
+
+Task 1:
+The running time complexity of the solution is O(n). 
+Each for loop iterates all elements in the list, which takes O(n). 
+Convert list to set takes O(n). 
+Therefore, the overall running time complexity is still O(n)
+
+Task 2:
+The running time complexity of the solution is O(n^2) in the worst case.
+The line 24 for loop itself has running time complexity O(n)
+Inside the for loop, the dict.get() method has running time complexity O(n) in the worst case
+Therefore, line 25 - line 38 has running time complexity O(n^2)
+List and dict conversion takes O(n)
+
+reference: https://wiki.python.org/moin/TimeComplexity
+
+Task 3:
+The running time complexity of the solution is O(nlogn). 
+The for loop, line 52 - line 66 has time complexity of O(n)
+List and dict conversion takes O(n)
+Samplesort costs time complexity of O(nlogn)
+
+Task 4:
+The running time complexity of the solution is O(n^2) in the worst case.
+The time complexity is dominated by the loops.
+Each loop itself has O(n), the dict.get() or list.remove() method inside the loop yields another O(n).
+Therefore, overall time complexity is O(n^2)
